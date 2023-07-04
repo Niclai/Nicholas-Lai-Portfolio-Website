@@ -3,7 +3,7 @@ import React from 'react';
 import profilePic from '../assets/portraitPic.jpg'; 
 
 const About = () => (
-  <section>
+  <section id="about">
     <h2>About Me</h2>
     <div className="about-content">
       <img src={profilePic} alt="Profile" className="profile-pic"/>

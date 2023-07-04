@@ -4,7 +4,7 @@ import React from 'react';
 const skills = ["JavaScript", "React", "Node.js", "CSS", "HTML", "Python", "Java", "SQL", "MongoDB"];
 
 const Skills = () => (
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
       {skills.map((skill, index) => (
