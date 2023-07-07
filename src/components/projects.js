@@ -5,7 +5,7 @@ import FDMLogo from '../assets/FDMLogo.jpg'; // adjust the path as needed
 import weatherAppLogo from '../assets/weatherAppLogo.jpg'; // adjust the path as needed
 import githubLogo from '../assets/github.png'; // adjust the path as needed
 
-// Import your additional images
+
 import FDMLogin from '../assets/FDMLogin.jpg';
 import FDMhomePage from '../assets/FDMhomePage.jpg';
 import FDMsearch from '../assets/FDMsearch.jpg';

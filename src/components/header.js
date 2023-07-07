@@ -20,6 +20,7 @@ const Header = () => (
       <Link to="about" smooth={true} offset={-100}>About</Link>
       <Link to="education" smooth={true} offset={-110}>Education</Link>
       <Link to="projects" smooth={true} offset={-100}>Projects</Link>
+      <Link to="experience" smooth={true} offset={-100}>Experience</Link>
       <Link to="skills" smooth={true} offset={-90}>Skills</Link>
       <Link to="contact" smooth={true} offset={-100}>Contact</Link>
     </nav>
