@@ -1,8 +1,6 @@
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from "react-scroll";
 import { useState } from 'react';
-import linkedInLogo from '../assets/linkedin.png'; 
-import githubLogo from '../assets/github.png'; 
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -17,16 +15,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="social-links">
-        <a href="https://www.linkedin.com/in/nicholas-gy-lai/" target="_blank" rel="noopener noreferrer">
-          <img src={linkedInLogo} alt="LinkedIn" className="social-link" />
-        </a>
-        <a href="https://github.com/Niclai" target="_blank" rel="noopener noreferrer">
-          <img src={githubLogo} alt="GitHub" className="social-link" />
-        </a>
-      </div>
+      
 
-      <h1>Nic Lai</h1>
+      <h1 className="header-title">Nicholas Lai</h1>
 
       <div className="hide-on-desktop">
         <Menu isOpen={isOpen} onStateChange={({ isOpen }) => setOpen(isOpen)} right width={'40%'}>
@@ -46,6 +37,9 @@ const Header = () => {
         <Link to="experience" smooth={true} offset={-100}>Experience</Link>
         <Link to="skills" smooth={true} offset={-90}>Skills</Link>
         <Link to="contact" smooth={true} offset={-100}>Contact</Link>
+        <div className="social-links">
+      </div>
+
       </nav>
 
       {/* Use button tag as the action to open up the hamburger menu */}
@@ -63,33 +57,12 @@ const Header = () => {
           z-index: 1000;
         }
 
-        .social-links {
-          align-items: center;
-        }
-
-        .social-link {
-          width: 80px;
-          height: auto;
-          margin-right: 0px;
+        
+        .header-title {
+          margin-left: 80px; /* Adjust the margin-right value as needed */
         }
 
         
-        
-        nav {
-          margin-top: 0;
-        }
-
-        nav a {
-          color: #f5f5f5;
-          margin: 0 15px;
-          text-decoration: none;
-          transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-          color: #FFC371;
-        }
-
         .hide-on-desktop {
           display: none;
         }
@@ -102,7 +75,7 @@ const Header = () => {
           display: none;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 896px) {
           .hide-on-desktop {
             display: block;
           }

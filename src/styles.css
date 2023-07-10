@@ -241,6 +241,15 @@ ul li {
     right: 10px;
 }
 
+.social-links {
+    align-items: center;
+}
+
+.social-link {
+    width: 100px;
+    height: auto;
+    margin-right: 0px;
+}
 
 .github-link {
     display: flex;
