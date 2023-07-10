@@ -68,6 +68,7 @@ nav a:hover {
 
 
 
+
 section h2 {
     font-weight: 500;
     font-size: 26px;
@@ -252,72 +253,3 @@ ul li {
     height: auto;  
 }
 
-
-
-
-
-body {
-    /* other styles... */
-    padding-top: 70px;
-}
-
-.container {
-    /* other styles... */
-    padding: 20px;
-    box-sizing: border-box; /* This will make sure padding is included in width calculation */
-}
-
-/* Media query for screens smaller than 600px (roughly smaller devices like smartphones) */
-@media screen and (max-width: 600px) {
-    body {
-        padding-top: 50px; /* reduce padding for small screens */
-    }
-
-    .container {
-        padding: 10px; /* reduce padding for small screens */
-    }
-
-    .project-button, .experience-button {
-        /* reduce size for small screens */
-        width: 100%;
-        height: 200px;
-    }
-
-    .project-container, .experience-container {
-        /* Stack the project and experience buttons vertically on small screens */
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Media query for screens between 601px and 900px (roughly tablets and small desktops) */
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    .project-button, .experience-button {
-        /* slightly larger size for medium screens */
-        width: 45%; /* adjust as necessary */
-        height: 250px; /* adjust as necessary */
-    }
-
-    .project-container, .experience-container {
-        /* Add some space around project and experience buttons on medium screens */
-        justify-content: space-around;
-    }
-}
-
-/* The CSS outside media queries applies to large screens (larger desktops) */
-.project-button, .experience-button {
-    position: relative;
-    display: block;
-    border: none;
-    padding: 0;
-    margin: 10px;
-    width: 300px; /* large size for large screens */
-    height: 300px; /* large size for large screens */
-    overflow: hidden;
-}
-
-.project-container, .experience-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
