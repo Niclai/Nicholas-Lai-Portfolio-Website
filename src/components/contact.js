@@ -1,7 +1,7 @@
 // Contact.js
 import React from 'react';
 import './componentsCSS/contactCSS.css';
-import Resume from '../assets/cv.pdf'
+import Resume from '../assets/cv.pdf';
 import CVIcon from '../assets/resume.png';
 
 const Contact = () => (
