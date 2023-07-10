@@ -55,33 +55,26 @@ const Header = () => {
 
       <style jsx>{`
         .header {
-          position: fixed;
           top: 0;
           width: 100%;
           background: #474747;
           color: #f5f5f5;
-          padding: 0;
           text-align: center;
           z-index: 1000;
         }
 
         .social-links {
-          display: flex;
           align-items: center;
         }
 
         .social-link {
           width: 80px;
           height: auto;
-          margin-right: 10px;
+          margin-right: 0px;
         }
 
-        h1 {
-          margin: 0;
-          padding: 0;
-          line-height: 70px;
-        }
-
+        
+        
         nav {
           margin-top: 0;
         }
