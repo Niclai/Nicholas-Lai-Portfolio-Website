@@ -26,7 +26,7 @@ const Header = () => {
         </a>
       </div>
 
-      <h1>Nicholas Lai</h1>
+      <h1>Nic Lai</h1>
 
       <div className="hide-on-desktop">
         <Menu isOpen={isOpen} onStateChange={({ isOpen }) => setOpen(isOpen)} right width={'40%'}>
